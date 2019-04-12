@@ -212,7 +212,7 @@ echo '<td>'.$fetch['0'].'</td><td>'.$fetch['1'].'</td><td>'.$fetch['2'].'</td><t
 			
 	else 		
 echo '<tr bgcolor=white>';
-echo '<td>'.$fetch['0'].'</td><td>'.$fetch['1'].'</td><td>'.$fetch['2'].'</td><td>'.$fetch['3'].'</td><td>'.$fetch['4'].'</td><td>'.$fetch['5'].'</td><td>'.$fetch['6'].'</td><td>'.$fetch['7'].'</td><td>'.$fetch['8'].'</td><td>'.$fetch['9'].'</td><td>'.$fetch['10'].'</td><td>'.$fetch['11'].'</td><td>'.$fetch['12'].'</td><td>'.$fetch['13'].'</td><td>'.$fetch['14'].'</td><td>'.$fetch['15'].'</td><td>'.$fetch['16'].'</td><td>'.$fetch['17'].'</td><td>'.$fetch['18'].'</td></tr>';
+echo '<td>'.$fetch['0'].'</td><td>'.$fetch['1'].'</td><td>'.$fetch['2'].'</td><td>'.$fetch['3'].'</td><td>'.$fetch['4'].'</td><td>'.$fetch['5'].'</td><td>'.$fetch['6'].'</td><td>'.$fetch['7'].'</td><td>'.$fetch['8'].'</td><td>'.$fetch['9'].'</td><td>'.$fetch['10'].'</td><td>'.$fetch['11'].'</td><td>'.$fetch['12'].'</td><td>'.$fetch['13'].'</td><td>'.$fetch['14'].'</td><td>'.$fetch['15'].'</td></tr>';
 			$flag++; 
 			}
 			echo '</table>';
@@ -237,7 +237,7 @@ echo '<td>'.$fetch['0'].'</td><td>'.$fetch['1'].'</td><td>'.$fetch['2'].'</td><t
 		 
 		 <?php
 			echo '<table style="" id="results" >';
-			echo '<tr style="background:#0066FF; color:white"><th>Project name</th><th>Procurement code</th><th>Project implementer</th><th>Project manager</th><th>Purpose&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>scope&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>contract  date</th><th>planed cost</th><th>current cost</th><th>implementation start date</th><th>implementation end date</th></tr>';
+			echo '<tr style="background:#0066FF; color:white"><th>Project name</th><th>Project implementer</th><th>Project manager</th><th>Purpose&nbsp;&nbsp;;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>scope&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th><th>GitHub URL</th><th>implementation start date</th><th>implementation end date</th></tr>';
 			$flag=0;
 			while($fetch=mysqli_fetch_array($sel)){
 			if($flag%2==0)
@@ -245,7 +245,7 @@ echo '<td>'.$fetch['0'].'</td><td>'.$fetch['1'].'</td><td>'.$fetch['2'].'</td><t
 			
 	else 		
 echo '<tr bgcolor=white>';
-echo '<td>'.$fetch['Project_name'].'</td><td>'.$fetch['Procurement_code'].'</td><td>'.$fetch['Proj_implementer'].'</td><td>'.$fetch['Proj_manager'].'</td><td>'.$fetch['Purpose'].'</td><td>'.$fetch['Scope'].'</td><td>'.$fetch['DateOf_Contract'].'</td><td>'.$fetch['14'].'</td><td>'.$fetch['15'].'</td><td>'.$fetch['Impl_StartDate'].'</td><td>'.$fetch['Impl_EndDate'].'</td</tr>';
+echo '<td>'.$fetch['Project_name'].'</td><td>'.$fetch['project_mentor'].'</td><td>'.$fetch['team_leader'].'</td><td>'.$fetch['Purpose'].'</td><td>'.$fetch['Scope'].'</td><td>'.$fetch['DateOf_Contract'].'</td><td>'.$fetch['github_url'].'</td><td>'.$fetch['Impl_StartDate'].'</td><td>'.$fetch['Impl_EndDate'].'</td</tr>';
 
 			 
 			$flag=$flag+1;
