@@ -202,16 +202,12 @@ function caaictpms()
   </tr>
   <tr>
     <th >Project Implementer</th>
-    <td><?php echo ': '.( htmlspecialchars( $row['Proj_implementer'] ) ); ?></td>
+    <td><?php echo ': '.( htmlspecialchars( $row['project_mentor'] ) ); ?></td>
     
   </tr>
   <tr>
-    <th >Procurement code</th>
-    <td><?php echo ': '.( htmlspecialchars( $row['Procurement_code'] ) ); ?></td>
-    
-  </tr><tr>
     <th >Project Managers title</th>
-    <td><?php echo ': '.( htmlspecialchars( $row['Proj_manager'] ) ); ?></td>
+    <td><?php echo ': '.( htmlspecialchars( $row['team_leader'] ) ); ?></td>
     
   </tr>
 <tr>
@@ -231,21 +227,14 @@ function caaictpms()
     <td>(b)  Scope of Work</td>
     <td><?php echo( htmlspecialchars( $row['Scope'] ) ); ?></td>
   </tr>
+  
   <tr>
-    <td>(c) Contract signing</td>
-    <td><?php echo( htmlspecialchars( $row['DateOf_Contract'] ) ); ?></td>
-  </tr>
-  <tr>
-    <td>(d)  Planned Contract Sum</td>
-    <td><?php echo( htmlspecialchars( $row['Planned_costing'] ) ); ?></td>
-  </tr>
-  <tr>
-    <td>(e) Status of Implementation </td>
+    <td>(e) Project Scenario </td>
     <td><?php echo( htmlspecialchars( $row['Impl_status'] ) ); ?></td>
   </tr>
   <tr>
-    <td>(f) Current Costing</td>
-    <td><?php echo( htmlspecialchars( $row['Current_Costing'] ) ); ?></td>
+    <td>(f) Github URL</td>
+    <td><?php echo( htmlspecialchars( $row['github_url'] ) ); ?></td>
   </tr>
   <tr>
     <td>(g)Remarks on Success/Failure/Delay
@@ -326,16 +315,12 @@ while( $row = mysqli_fetch_array( $result1))
   </tr>
   <tr>
     <th >Project Implementer</th>
-    <td><?php echo ': '.( htmlspecialchars( $row['Proj_implementer'] ) ); ?></td>
+    <td><?php echo ': '.( htmlspecialchars( $row['project_mentor'] ) ); ?></td>
     
   </tr>
   <tr>
-    <th >Procurement code</th>
-    <td><?php echo ': '.( htmlspecialchars( $row['Procurement_code'] ) ); ?></td>
-    
-  </tr><tr>
     <th >Project Managers title</th>
-    <td><?php echo ': '.( htmlspecialchars( $row['Proj_manager'] ) ); ?></td>
+    <td><?php echo ': '.( htmlspecialchars( $row['team_leader'] ) ); ?></td>
     
   </tr>
 <tr>
@@ -355,21 +340,14 @@ while( $row = mysqli_fetch_array( $result1))
     <td>(b)  Scope of Work</td>
     <td><?php echo( htmlspecialchars( $row['Scope'] ) ); ?></td>
   </tr>
+  
   <tr>
-    <td>(c) Contract signing</td>
-    <td><?php echo( htmlspecialchars( $row['DateOf_Contract'] ) ); ?></td>
-  </tr>
-  <tr>
-    <td>(d)  Planned Contract Sum</td>
-    <td><?php echo( htmlspecialchars( $row['Planned_costing'] ) ); ?></td>
-  </tr>
-  <tr>
-    <td>(e) Status of Implementation </td>
+    <td>(e) Project Scenario </td>
     <td><?php echo( htmlspecialchars( $row['Impl_status'] ) ); ?></td>
   </tr>
   <tr>
-    <td>(f) Current Costing</td>
-    <td><?php echo( htmlspecialchars( $row['Current_Costing'] ) ); ?></td>
+    <td>(f) GitHub URL</td>
+    <td><?php echo( htmlspecialchars( $row['github_url'] ) ); ?></td>
   </tr>
   <tr>
     <td>(g)Remarks on Success/Failure/Delay
@@ -419,7 +397,7 @@ while( $row = mysqli_fetch_array( $result1))
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a  href="home.php?action=impstatus">
-                        IMPLEMENTATION STATUS
+                        PROJECT SCENARIO
                   </a>
                             </h4>
                         </div>
