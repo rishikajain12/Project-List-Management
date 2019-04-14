@@ -112,7 +112,7 @@ include('connection.php');
 	}else if($pwd==""){
 	echo 'You forgot to enter password.password can\'t be empty<br/>';
 	}else{
-	$adduser=mysqli_query($conn,"INSERT INTO user VALUES('$uid', '$name', '$dep', '$role', '$email', '$username','$pwds' )");
+	$adduser=mysqli_query($conn,"INSERT INTO user(user_id,name,department,role,email_address,username,password) VALUES('$uid', '$name', '$dep', '$role', '$email', '$username','$pwds' )");
 	if(!$adduser){
 	echo mysqli_error($conn);
 	}else {
@@ -125,6 +125,14 @@ include('connection.php');
 	}else if($action=='uedit'){
 	?>
 	<h1>Select user to view details</h1>
+	<?php
+		$sql = "select count(user_id) as total from user";
+		$result = mysqli_query($conn,$sql);
+		$data = mysqli_fetch_assoc($result);
+		echo 'Total Faculties Registered: '.$data['total'];
+		
+		
+	?>
 	<form method="post" action="useredit.php">
 	 
 	 <select name="userid">
