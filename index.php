@@ -1,3 +1,3 @@
 <?php 
-header('location:login.php?action=login');
+	header('location:index.html');
 ?> 

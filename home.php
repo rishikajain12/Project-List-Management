@@ -692,12 +692,12 @@ echo '<td>'.$fetch['Project_name'].'</td><td>'.$fetch['Impl_code'].'</td><td>'.$
                         <div class="panel-heading">
                             <h4 class="panel-title">
                                 <a  href="?action=pdetails">
-                        PROJECT DETAILS
+                        CREATE NEW PROJECT
                   </a>
                             </h4>
                         </div>
                         
-                    </div>
+                    </div></br>
 					
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -708,7 +708,7 @@ echo '<td>'.$fetch['Project_name'].'</td><td>'.$fetch['Impl_code'].'</td><td>'.$
                             </h4>
                         </div>
                         
-                    </div>
+                    </div></br>
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -734,7 +734,7 @@ echo '<td>'.$fetch['Project_name'].'</td><td>'.$fetch['Impl_code'].'</td><td>'.$
  							</ol>
                             </div>
                         </div>
-                    </div>
+                    </div></br>
 					
 					
 					
@@ -766,7 +766,7 @@ echo '<td>'.$fetch['Project_name'].'</td><td>'.$fetch['Impl_code'].'</td><td>'.$
 	</div>
 </div>
 <div id="footer">
-	<p>Copyright &copy; I3. Designed by <a href="rishikajainranu@gmail.com" class="link1">Rishika and team</a></p>
+	<p>Copyright &copy; I3. Designed by <a href="mailto:rishikajainranu@gmail.com" style="color:white; font-size: 13px;"><strong>Rishika and Team</strong></a></p>
 </div>
 
 

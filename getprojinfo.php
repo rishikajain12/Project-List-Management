@@ -391,7 +391,7 @@ while( $row = mysqli_fetch_array( $result1))
                             </h4>
                         </div>
                         
-                    </div>
+                    </div></br>
 					
                     <div class="panel panel-default" >
                         <div class="panel-heading">
@@ -402,7 +402,7 @@ while( $row = mysqli_fetch_array( $result1))
                             </h4>
                         </div>
                         
-                    </div>
+                    </div></br>
 
                     <div class="panel panel-default">
                         <div class="panel-heading">
@@ -428,7 +428,7 @@ while( $row = mysqli_fetch_array( $result1))
  							</ol>
                             </div>
                         </div>
-                    </div>
+                    </div></br>
 					
 					
 					
@@ -460,7 +460,7 @@ while( $row = mysqli_fetch_array( $result1))
 	</div>
 </div>
 <div id="footer">
-	<p>Copyright &copy; I3. Designed by <a href="rishikajainranu@gmail.com" class="link1">Rishika and team</a></p>
+	<p>Copyright &copy; I3. Designed by <a href="mailto:rishikajainranu@gmail.com" style="color:white; font-size: 13px;"><strong>Rishika and Team</strong></a></p>
 </div>
 
 
