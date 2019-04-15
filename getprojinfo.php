@@ -107,40 +107,18 @@ echo 'Currrent date:<a href="calender.php" title="click to view calendar"><font 
 	
 	<div style="float:left;">
 	<form  method="post">
-		<select  name="pcode" >
-            <option value="" required>--select project---</option>
-            <?php  
-     $result = mysqli_query($conn,"SELECT *FROM General_information WHERE 1 AND Proj_code IN (SELECT Proj_code FROM Implementation_Status)   ");
-		while($row = mysqli_fetch_array($result))
-			{   echo '<option value="'.$row['Proj_code'].'">';
-				echo $row['Project_name'];
-				echo '</option>';
-			}
-		?>
-          </select><br><br><input type="submit" value="Submit" name="Go" />
-		  </form>
+          <h2 style="display: inline-block; font-size: 25px;">Project Code : </h2>
+          <input value="" name="pcode" required="true" />
+  <?php
+          $result = mysqli_query($conn,"SELECT *FROM General_information WHERE 1 AND Proj_code IN (SELECT Proj_code FROM Implementation_Status) ");
+  ?>
+          <br><br>
+          <input type="submit" value="Submit" name="Go" style="margin-left: 45%; font-size:25; height:40px;" />
+        </form>
 		   
 		  </div>
 		  
-		  &nbsp;&nbsp;&nbsp;&nbsp;OR
 		 
-		  <div style="float:right">
-		  
-		  <form  method="post">
-		<?php 
-				  $op;
-				  for($t=1;$t<=10;$t++){
-				 $op.="<option value=".$t.">".$t."</option>";
-				  
-				  }
-				  ?>
-                <select name="noproj" >
-				  <option value="">Display ? projects</option>
-                  <?php  echo $op; ?>
-				  
-                </select><br><br><input type="submit" value="Submit" name="view" />
-		  </form>
-		  </div>
 		
 	<?php
 	if (isset($_POST['Go'])){
