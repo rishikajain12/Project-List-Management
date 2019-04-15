@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 12, 2019 at 12:58 PM
+-- Generation Time: Apr 15, 2019 at 10:22 AM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.1.24
 
@@ -21,6 +21,29 @@ SET time_zone = "+00:00";
 --
 -- Database: `ictpms`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `admin`
+--
+
+CREATE TABLE `admin` (
+  `user_id` int(200) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `department` varchar(200) NOT NULL,
+  `role` varchar(255) NOT NULL,
+  `email_address` varchar(255) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `admin`
+--
+
+INSERT INTO `admin` (`user_id`, `name`, `department`, `role`, `email_address`, `username`, `password`) VALUES
+(111, 'admin', '', '', 'admin@admin.com', 'admin', 'admin');
 
 -- --------------------------------------------------------
 
@@ -95,6 +118,7 @@ CREATE TABLE `general_information` (
 --
 
 INSERT INTO `general_information` (`Proj_code`, `Project_name`, `project_mentor`, `AppearsIn_BussPlan`, `team_leader`, `T_member1`, `T_member2`, `T_member3`, `T_member4`, `T_mem5`, `Scope`, `Purpose`, `github_url`, `Planned_completion`, `Impl_StartDate`, `Impl_EndDate`) VALUES
+('1001', 'code raiders', 'ayush gupta', 'NO', 'rishika jain', 'divya', 'prachi', 'virendra', 'babita', 'geeta', 'not that wide scope', 'learning purpose', 'http://localhost/phpmyadmin/sql.php?server=1&db=ictpms&table=general_information&pos=0', 1, '2019-04-24', '2019-04-24'),
 ('101', 'HUB', 'ayush gupta', 'YES', 'Prachi', 'rishika', 'virendra', 'divya', 'rishika jain', 'bab', 'scope', 'purpose', 'http://localhost/phpmyadmin/sql.php?server=1&db=ictpms&table=general_information&pos=0', 12, '2019-04-23', '2019-04-23'),
 ('3030', 'fmpst', 'ayush gupta', 'NO', 'divya jain', 'rishika', 'virendra', 'prachi', 'babita', 'geeta', '', '', 'http://localhost/phpmyadmin/sql.php?server=1&db=ictpms&table=general_information&pos=0', 1, '2019-04-26', '2019-04-26'),
 ('3085', 'web_page', 'ayush gupta', 'NO', 'divya jain', 'rishika', 'virendra', 'prachi', 'babita', 'geeta', 'nothing', 'just for fun', 'http://localhost/phpmyadmin/sql.php?server=1&db=ictpms&table=general_information&pos=0', 20, '2019-04-23', '2019-04-23'),
@@ -148,14 +172,19 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`user_id`, `name`, `department`, `role`, `email_address`, `username`, `password`) VALUES
-('1323', 'rishika jain', 'cse', 'leader', 'rishikajainranu@gmail.com', 'rishika12', 'caf1a3dfb505ffed0d024130f58c5cfa'),
-('A1', 'Admin', 'ITdepatment', 'MIT', 'mit@caa.co.ug', 'admin', '21232f297a57a5a743894a0e4a801fc3'),
-('divya29', 'divya jain', 'cse', 'manager', '1998chahar@gmail.com', 'divya', '202cb962ac59075b964b07152d234b70'),
-('virendra', 'virendra sharma', 'cse', 'manager', '17etccs011@technonjr.org', 'virendra21', '202cb962ac59075b964b07152d234b70');
+('101', 'ayush gupta', 'cse', 'mentor', 'ayush.gupta@gmail.com', 'ayush', 'caf1a3dfb505ffed0d024130f58c5cfa'),
+('102', 'aaditya maheshwari', 'CSE', 'Mentor', 'superadmin@gmail.com', 'aaditya', '202cb962ac59075b964b07152d234b70'),
+('103', 'paras kothari', 'CSE', 'HOD', 'paras@gmail.com', 'paras', '202cb962ac59075b964b07152d234b70');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- Indexes for table `backup`
