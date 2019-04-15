@@ -118,61 +118,58 @@
                             <div  id="print_content" style="margin-top:30px;float:left">
                                 <p class="pprint"> <a href="javascript:caaictpms()" ><img src="images/Print.png" width="30" height="30" /></a></p><br/>
                                 <table class="tablea" style="text-align: left;">
-                                    <tr>
-                                        <th >Project Name</th>
-                                        <td><?php echo    ': <b>'.( htmlspecialchars( $row['Project_name'] ) ).'</b>'; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th >Project Implementer</th>
-                                        <td><?php echo ': '.( htmlspecialchars( $row['Proj_implementer'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th >Procurement Code</th>
-                                        <td><?php echo ': '.( htmlspecialchars( $row['Procurement_code'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th >Project Managers</th>
-                                        <td><?php echo ': '.( htmlspecialchars( $row['Proj_manager'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th >Project Particulars</th>
-                                        <td> :  See Details below</td>
-                                    </tr>
-                                </table>
-                                <table  border="1" class="tableb" cellpadding="0" cellspacing="0">
-                                    <tr>
-                                        <td>(a) Purpose </td>
-                                        <td><?php echo( htmlspecialchars( $row['Purpose'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(b) Scope of Work</td>
-                                        <td><?php echo( htmlspecialchars( $row['Scope'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(c) Contract Signing </td>
-                                        <td><?php echo( htmlspecialchars( $row['DateOf_Contract'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(d) Planned Contract Sum </td>
-                                        <td><?php echo( htmlspecialchars( $row['Planned_costing'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(e) Status of Implementation </td>
-                                        <td><?php echo( htmlspecialchars( $row['Impl_status'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(f) Current Costing </td>
-                                        <td><?php echo( htmlspecialchars( $row['Current_Costing'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(g) Remarks on Success/Failure/Delay </td>
-                                        <td><?php echo( htmlspecialchars( $row['Remarks'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(h) Action Required </td>
-                                        <td><?php echo( htmlspecialchars( $row['Action_required'] ) ); ?></td>
-                                    </tr>
-                                </table>
+                                   <tr>
+										<th >Project Name</th>
+										<td><?php echo    ': <b>'.( htmlspecialchars( $row['Project_name'] ) ).'</b>'; ?></td>
+										
+									  </tr>
+									  <tr>
+										<th >Project Implementer</th>
+										<td><?php echo ': '.( htmlspecialchars( $row['project_mentor'] ) ); ?></td>
+										
+									  </tr>
+									  <tr>
+										<th >Project Managers title</th>
+										<td><?php echo ': '.( htmlspecialchars( $row['team_leader'] ) ); ?></td>
+										
+									  </tr>
+									<tr>
+										<th >Project Particulars</th>
+										<td> :  See details below</td>
+										
+									  </tr>
+
+									</table>
+
+									<table  border="1" class="tableb" cellpadding="0" cellspacing="0">
+									  <tr>
+										<td>(a)  Purpose</td>
+										<td><?php echo( htmlspecialchars( $row['Purpose'] ) ); ?></td>
+									  </tr>
+									  <tr>
+										<td>(b)  Scope of Work</td>
+										<td><?php echo( htmlspecialchars( $row['Scope'] ) ); ?></td>
+									  </tr>
+									  
+									  <tr>
+										<td>(e) Project Scenario </td>
+										<td><?php echo( htmlspecialchars( $row['Impl_status'] ) ); ?></td>
+									  </tr>
+									  <tr>
+										<td>(f) Github URL</td>
+										<td><?php echo( htmlspecialchars( $row['github_url'] ) ); ?></td>
+									  </tr>
+									  <tr>
+										<td>(g)Remarks on Success/Failure/Delay
+									</td>
+										<td><?php echo( htmlspecialchars( $row['Remarks'] ) ); ?></td>
+									  </tr>
+									  <tr>
+										<td>(h)  Action Required</td>
+										<td><?php echo( htmlspecialchars( $row['Action_required'] ) ); ?></td>
+									  </tr>
+									</table>
+
                             </div>
     <?php
                         }
@@ -213,59 +210,58 @@
     ?>
                                 <table class="tablea" style="text-align: left;" >
                                     <tr>
-                                        <th > Project Name </th>
-                                        <td><?php echo    ': <b>'.( htmlspecialchars( $row['Project_name'] ) ).'</b>'; ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th > Project Implementer </th>
-                                        <td><?php echo ': '.( htmlspecialchars( $row['Proj_implementer'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th > Procurement Code </th>
-                                        <td><?php echo ': '.( htmlspecialchars( $row['Procurement_code'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <th > Project Managers </th>
-                                        <td><?php echo ': '.( htmlspecialchars( $row['Proj_manager'] ) ); ?></td>
-                                        </tr>
-                                    <tr>
-                                        <th > Project Particulars </th>
-                                        <td> :  See Details below</td>
-                                    </tr>
-                                </table>
-                                <table  border="1" class="tableb" cellpadding="0" cellspacing="0">
-                                    <tr>
-                                        <td>(a) Purpose </td>
-                                        <td><?php echo( htmlspecialchars( $row['Purpose'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(b) Scope of Work </td>
-                                        <td><?php echo( htmlspecialchars( $row['Scope'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(c) Contract Signing </td>
-                                        <td><?php echo( htmlspecialchars( $row['DateOf_Contract'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(d) Planned Contract Sum </td>
-                                        <td><?php echo( htmlspecialchars( $row['Planned_costing'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(e) Status of Implementation </td>
-                                        <td><?php echo( htmlspecialchars( $row['Impl_status'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(f) Current Costing </td>
-                                        <td><?php echo( htmlspecialchars( $row['Current_Costing'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(g) Remarks on Success/Failure/Delay </td>
-                                        <td><?php echo( htmlspecialchars( $row['Remarks'] ) ); ?></td>
-                                    </tr>
-                                    <tr>
-                                        <td>(h) Action Required </td>
-                                        <td><?php echo( htmlspecialchars( $row['Action_required'] ) ); ?></td>
-                                    </tr>
+    <th >Project Name</th>
+    <td><?php echo    ': <b>'.( htmlspecialchars( $row['Project_name'] ) ).'</b>'; ?></td>
+    
+  </tr>
+  <tr>
+    <th >Project Implementer</th>
+    <td><?php echo ': '.( htmlspecialchars( $row['project_mentor'] ) ); ?></td>
+    
+  </tr>
+  <tr>
+    <th >Project Managers title</th>
+    <td><?php echo ': '.( htmlspecialchars( $row['team_leader'] ) ); ?></td>
+    
+  </tr>
+<tr>
+    <th >Project Particulars</th>
+    <td> :  See details below</td>
+    
+  </tr>
+
+</table>
+
+<table  border="1" class="tableb" cellpadding="0" cellspacing="0">
+  <tr>
+    <td>(a)  Purpose</td>
+    <td><?php echo( htmlspecialchars( $row['Purpose'] ) ); ?></td>
+  </tr>
+  <tr>
+    <td>(b)  Scope of Work</td>
+    <td><?php echo( htmlspecialchars( $row['Scope'] ) ); ?></td>
+  </tr>
+  
+  <tr>
+    <td>(e) Project Scenario </td>
+    <td><?php echo( htmlspecialchars( $row['Impl_status'] ) ); ?></td>
+  </tr>
+  <tr>
+    <td>(f) Github URL</td>
+    <td><?php echo( htmlspecialchars( $row['github_url'] ) ); ?></td>
+  </tr>
+  <tr>
+    <td>(g)Remarks on Success/Failure/Delay
+</td>
+    <td><?php echo( htmlspecialchars( $row['Remarks'] ) ); ?></td>
+  </tr>
+  <tr>
+    <td>(h)  Action Required</td>
+    <td><?php echo( htmlspecialchars( $row['Action_required'] ) ); ?></td>
+  </tr>
+</table>
+
+
                                 </table> <br><hr>
     <?php
                             }
